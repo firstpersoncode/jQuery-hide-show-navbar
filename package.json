@@ -1,0 +1,19 @@
+{
+  "name": "Jquery Toggle NavBar",
+  "version": "1.0.0",
+  "description": "Jquery Plugin for hide and show navbar on scrolling page",
+  "main": "toggleNavBar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nasser",
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

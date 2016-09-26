@@ -1,0 +1,30 @@
+body,html{
+	margin: 0px;
+	padding: 0px;
+}
+#navbar{
+	background: #eee;
+	padding: 10px;
+}
+#navbar ul{
+	padding: 0px;
+	list-style: none;
+	font-size: 0px;
+}
+#navbar ul li{
+	display: inline-block;
+	font-size: 20px;
+}
+#navbar ul li a{
+	padding: 15px;
+	text-decoration: none;
+}
+#navbar ul li a:hover{
+	background: #ddd;
+}
+
+#target1,#target2,#target3{
+	background: #eee;
+	padding: 100px 15px;
+	margin: 500px auto;
+}

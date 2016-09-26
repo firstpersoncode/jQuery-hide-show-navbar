@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<title>toggleNavBar.js</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="navbar">
+		<ul>
+			<li><a href="https://codepen.io/nassermaronie/">Lorem</a></li>
+			<li><a href="https://github.com/firstpersoncode">Ipsum</a></li>
+			<li><a href="#" data-scroll="target1">target 1</a></li>
+			<li><a href="#" data-scroll="target2">target 2</a></li>
+			<li><a href="#" data-scroll="target3">target 3</a></li>
+		</ul>
+	</div>
+
+	<div id="target1">
+		<h1>Target 1</h1>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+	<div id="target2">
+		<h1>Target 2</h1>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut e
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+	<div id="target3">
+		<h1>Target 3</h1>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut 
+	</div>
+
+	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+	<script type="text/javascript" src="build/toggleNavBar.js"></script>
+	<script type="text/javascript">
+		$('#navbar').toggleNav({
+			slideEffect : true,
+			speed : 300
+		});
+	</script>
+
+</body>
+</html>
