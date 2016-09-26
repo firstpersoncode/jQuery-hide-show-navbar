@@ -1,5 +1,5 @@
 # Jquery Toggle NavBar 1.0
-Very light Jquery Plugin for hide and show navbar on scrolling page.
+Very light Jquery Plugin for hide and show navbar on scrolling.
 
 Nasser Maronie
 * [Demo](http://codepen.io/nassermaronie/pen/ORmyNw)
