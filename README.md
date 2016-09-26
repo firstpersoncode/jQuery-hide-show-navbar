@@ -7,12 +7,21 @@ Nasser Maronie
 
 
   toggleNavBar.js 1.0
+
+  Create toggle effect when scrolling page with fade effect or slide effect.
   
   Invoke the plugin with settings
    ```javascript
+   //slide effect
      $('#navbar').toggleNav({
    	     slideEffect : true, // Toggle effect, (boolean). Only accept true or false.
          speed : 300 // Toggle animation speed (number) limit of speed is 5000.
+     });
+
+     //fade effect
+     $('#navbar').toggleNav({
+   	     fadeEffect : true,
+         speed : 300
      });
   ```
 
