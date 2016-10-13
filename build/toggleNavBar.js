@@ -6,30 +6,37 @@ https://github.com/firstpersoncode
 
 
   toggleNavBar.js
-  9/26/2016
+
   Very light Jquery Plugin for hide and show navbar on scrolling page.
 
   Invoke plugin
-  $('#navbar').toggleNav({
-	     slideEffect : true, // Toggle effect, (boolean). Only accept true or false.
-      speed : 300 // Toggle animation speed (number) limit of speed is 5000.
-  });
+    $('#navbar').toggleNav({
+  	  slideEffect : true, // Toggle effect, (boolean). Only accept true or false.
+        speed : 300 // Toggle animation speed (number) limit of speed is 5000.
+    }, function(){
+	
+		// callback when nav showed
 
-  the navbar will be positioned 'fixed' and stick on the top of screen with full width.
+    }, function(){
+	
+		// callback when nav hide
+
+    });
+
+    the navbar will be positioned 'fixed' and stick on the top of screen with full width.
 
   
 ========================================================================= */
 
 (function($) {
-  $.fn.toggleNav = function(togglenav){
-
+  $.fn.toggleNav = function(opt){
     //default setting
     var settings = $.extend({
       //Only one effect can be set, if two effects are true, the plugin will throw error
       fadeEffect : null, // Toggle fadeIn fadeOut effect
       slideEffect : null, // Toggle slide to top effect
       speed : 600 // Toggle animation speed
-    },togglenav);
+    }, opt);
 
     var slideTrue = settings.slideEffect == true,
           fadeTrue = settings.fadeEffect == true;    
@@ -47,11 +54,11 @@ https://github.com/firstpersoncode
         console.error('error, the speed setting is not correct');
         return false
       }
-
+      
       //handle the navbar
       $(this).addClass("toggleNavbar");
-      
-      var togglethis = jQuery('.toggleNavbar'),
+      var _this = this,
+        togglethis = $('.toggleNavbar'),
           previousScroll = 0,//record last scroll
           headerHeight = togglethis.outerHeight();//record 'this' height
 
@@ -79,7 +86,7 @@ https://github.com/firstpersoncode
           togglethis.css({
             'transform' : 'translateY(-'+headerHeight+'px)'
           });
-        }
+        }       
       }
       function showNav(){//handle toggle show navbar
         if(fadeTrue){togglethis.fadeIn(settings.speed)}

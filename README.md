@@ -1,4 +1,4 @@
-# Jquery Toggle NavBar 1.0
+# Jquery Toggle NavBar 1.1
 Very light Jquery Plugin for hide and show navbar on scrolling.
 
 Nasser Maronie
@@ -6,7 +6,7 @@ Nasser Maronie
 * [github](https://github.com/firstpersoncode/jQuery-hide-show-navbar)
 
 
-  toggleNavBar.js 1.0
+  toggleNavBar.js 1.1
 
   Create toggle effect when scrolling page with fade effect or slide effect.
   
